@@ -23,6 +23,21 @@ while (boomer != boomer_do) {
 
 
 
-
-
+    string calculation = Console.ReadLine();
+    if (calculation == "+")
+    {
+       int resault = first_number + second_number;
+    }
+    else if (calculation == "-")
+    {
+        int resault = first_number + second_number;
+    }
+    else if (calculation == "*") 
+    {
+        int resault = first_number + second_number;
+    }
+    else  if (calculation == "/")
+    {
+        int resault = first_number + second_number;
+    }
 }
