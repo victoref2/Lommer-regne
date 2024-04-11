@@ -30,14 +30,14 @@ while (boomer != boomer_do) {
     }
     else if (calculation == "-")
     {
-        int resault = first_number + second_number;
+        int resault = first_number - second_number;
     }
     else if (calculation == "*") 
     {
-        int resault = first_number + second_number;
+        int resault = first_number * second_number;
     }
     else  if (calculation == "/")
     {
-        int resault = first_number + second_number;
+        int resault = first_number / second_number;
     }
 }
