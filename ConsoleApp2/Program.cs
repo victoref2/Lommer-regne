@@ -22,19 +22,12 @@ while (boomer != boomer_do)
     first_number = Convert.ToInt32(Console.ReadLine());
 
 
-
-    
-
-
     Console.WriteLine("what is the second number you would like to use");
     Console.Write("number:\t");
     second_number = Convert.ToInt32(Console.ReadLine());
 
-    
-
     Console.WriteLine("You can use either: +,-,*,/");
-
-    Console.Write("Calculation type:\t");
+    Console.Write("Choice:\t");
     calculation = Console.ReadLine();
 
     if (calculation == "+")
