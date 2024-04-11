@@ -65,7 +65,7 @@ while (boomer != boomer_do)
     {
         Console.WriteLine(what_do);
         boomer = boomer_do;
-        Console.WriteLine("" +
+        Console.WriteLine("\n" +
             "░░░░░▐▀█▀▌░░░░▀█▄░░░\r\n" +
             "░░░░░▐█▄█▌░░░░░░▀█▄░\r\n" +
             "░░░░░░▀▄▀░░░▄▄▄▄▄▀▀░\r\n" +
