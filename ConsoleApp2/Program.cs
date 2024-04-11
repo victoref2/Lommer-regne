@@ -11,9 +11,17 @@ string boomer = "per";
 
 string boomer_do = "Work on Antwar";
 
-while (boomer != boomer_do) {
+while (boomer != boomer_do)
+{
 
     Console.WriteLine("What is the first number you would like to use in the Calculation");
+
+
+    Console.Write("number:\t");
+#pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
+    first_number = Convert.ToInt32(Console.ReadLine());
+
+
 
 
 
@@ -23,21 +31,40 @@ while (boomer != boomer_do) {
 
 
 
+    string calculation = Console.ReadLine();
+    if (calculation == "+")
+    {
+        int answer = first_number + second_number;
+    }
+    else if (calculation == "-")
+    {
+        int answer = first_number - second_number;
+    }
+    else if (calculation == "*")
+    {
+        int answer = first_number * second_number;
+    }
+    else if (calculation == "/")
+    {
+        int answer = first_number / second_number;
+    }
+    else
+    {
+        Console.WriteLine("This aint it chief");
+    }
+
+
 
     Console.WriteLine("wanna do more? Yes or no");
     string awnser = Console.ReadLine();
-    if(awnser == "yes" || awnser == "y")
+    if (awnser == "yes" || awnser == "y")
     {
 
-    }else
+    }
+    else
     {
         boomer = boomer_do;
     }
 #pragma warning restore CS8600
 }
-
-
-
-
-
 
