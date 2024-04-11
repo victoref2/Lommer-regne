@@ -56,8 +56,8 @@ while (boomer != boomer_do)
 
 
     Console.WriteLine("wanna do more? Yes or no");
-    string awnser = Console.ReadLine();
-    if (awnser == "yes" || awnser == "y")
+    string Word_awnser = Console.ReadLine();
+    if (Word_awnser == "yes" || Word_awnser == "y")
     {
 
     }
