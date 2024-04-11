@@ -1,7 +1,7 @@
 ﻿
 int first_number;
 int second_number;
-string what_do;
+string what_do ="well thats allright then!";
 int answer;
 string calculation;
 
@@ -63,6 +63,7 @@ while (boomer != boomer_do)
     }
     else
     {
+        Console.WriteLine(what_do);
         boomer = boomer_do;
     }
 #pragma warning restore CS8600
