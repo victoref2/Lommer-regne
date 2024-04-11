@@ -3,7 +3,7 @@ int first_number;
 int second_number;
 string what_do;
 int answer;
-
+string calculation;
 
 string boomer = "per";
 
@@ -23,36 +23,39 @@ while (boomer != boomer_do)
 
 
 
-
+    
 
 
     Console.WriteLine("what is the second number you would like to use");
-    second_number = Convert.ToInt32(Console.Read());
+    Console.Write("number:\t");
+    second_number = Convert.ToInt32(Console.ReadLine());
 
-    int answer;
+    
 
     Console.WriteLine("You can use either: +,-,*,/");
-    string calculation = Console.ReadLine();
+
+    Console.Write("Calculation type:\t");
+    calculation = Console.ReadLine();
 
     if (calculation == "+")
     {
         answer = first_number + second_number;
-        Console.WriteLine($"The resault is{answer}");
+        Console.WriteLine($"The resault is {answer}");
     }
     else if (calculation == "-")
     {
         answer = first_number - second_number;
-        Console.WriteLine($"The resault is{answer}");
+        Console.WriteLine($"The resault is {answer}");
     }
     else if (calculation == "*")
     {
         answer = first_number * second_number;
-        Console.WriteLine($"The resault is{answer}");
+        Console.WriteLine($"The resault is {answer}");
     }
     else if (calculation == "/")
     {
         answer = first_number / second_number;
-        Console.WriteLine($"The resault is{answer}");
+        Console.WriteLine($"The resault is {answer}");
     }
     else
     {
