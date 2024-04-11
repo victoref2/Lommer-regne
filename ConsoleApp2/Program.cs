@@ -19,11 +19,10 @@ while (boomer != boomer_do) {
 
 
     Console.WriteLine("what is the second number you would like to use");
+    second_number = Console.Read();
+
+
+
 
 
 }
-
-
-
-
-
