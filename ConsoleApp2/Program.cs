@@ -29,30 +29,29 @@ while (boomer != boomer_do)
     Console.WriteLine("what is the second number you would like to use");
     second_number = Convert.ToInt32(Console.Read());
 
-
+    int answer;
 
     string calculation = Console.ReadLine();
     if (calculation == "+")
     {
-        int answer = first_number + second_number;
+         answer = first_number + second_number;
     }
     else if (calculation == "-")
     {
-        int answer = first_number - second_number;
+        answer = first_number - second_number;
     }
     else if (calculation == "*")
     {
-        int answer = first_number * second_number;
+        answer = first_number * second_number;
     }
     else if (calculation == "/")
     {
-        int answer = first_number / second_number;
+        answer = first_number / second_number;
     }
     else
     {
         Console.WriteLine("This aint it chief");
     }
-
 
 
     Console.WriteLine("wanna do more? Yes or no");
