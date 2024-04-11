@@ -1,2 +1,19 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿
+int first_number;
+int second_number;
+string what_do;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
