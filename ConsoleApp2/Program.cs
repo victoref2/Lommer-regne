@@ -2,7 +2,7 @@
 int first_number;
 int second_number;
 string what_do;
-
+int answer;
 
 
 string boomer = "per";
@@ -31,28 +31,33 @@ while (boomer != boomer_do)
 
     int answer;
 
+    Console.WriteLine("You can use either: +,-,*,/");
     string calculation = Console.ReadLine();
+
     if (calculation == "+")
     {
-         answer = first_number + second_number;
+        answer = first_number + second_number;
+        Console.WriteLine($"The resault is{answer}");
     }
     else if (calculation == "-")
     {
         answer = first_number - second_number;
+        Console.WriteLine($"The resault is{answer}");
     }
     else if (calculation == "*")
     {
         answer = first_number * second_number;
+        Console.WriteLine($"The resault is{answer}");
     }
     else if (calculation == "/")
     {
         answer = first_number / second_number;
+        Console.WriteLine($"The resault is{answer}");
     }
     else
     {
         Console.WriteLine("This aint it chief");
     }
-
 
     Console.WriteLine("wanna do more? Yes or no");
     string Word_awnser = Console.ReadLine();
