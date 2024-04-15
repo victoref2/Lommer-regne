@@ -59,8 +59,10 @@ while (boomer != boomer_do)
         Console.WriteLine("This aint it chief");
     }
 
-    Console.WriteLine("wanna do more? Yes or no");
+    Console.WriteLine("wanna do more? yes or no(or anything other then yes)");
+#pragma warning disable CS8600
     string Word_awnser = Console.ReadLine();
+#pragma warning restore CS8600 
     if (Word_awnser == "yes" || Word_awnser == "y")
     {
 
