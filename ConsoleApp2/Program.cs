@@ -19,12 +19,12 @@ while (boomer != boomer_do)
 
     Console.Write("number:\t");
 #pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
-    first_number = Convert.ToInt32(Console.ReadLine());
-
+    first_number = (float)Convert.ToDouble(Console.ReadLine());
+    
 
     Console.WriteLine("what is the second number you would like to use");
     Console.Write("number:\t");
-    second_number = Convert.ToInt32(Console.ReadLine());
+    second_number = (float)Convert.ToDouble(Console.ReadLine());
 
     Console.WriteLine("You can use either: +,-,*,/");
     Console.Write("Choice:\t");
