@@ -32,7 +32,9 @@ while (boomer != boomer_do)
     {
         Console.WriteLine("You can use either: +,-,*,/");
         Console.Write("Choice:\t");
+#pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
         calculation = Console.ReadLine();
+#pragma warning restore CS8600 // Converting null literal or possible null value to non-nullable type.
     } while (calculation != "+" || calculation != "-" || calculation != "/" || calculation != "*");
 
     if (calculation == "+")
