@@ -20,15 +20,19 @@ while (boomer != boomer_do)
 
     Console.Write("number:\t");
 #pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
-    float.TryParse(Console.ReadLine(), out first_number);
-
-
     
-    
+    if (!float.TryParse(Console.ReadLine(), out first_number))
+    {
+        Console.WriteLine("what are you doing That ain no number dumb ass");
+    }
+
 
     Console.WriteLine("what is the second number you would like to use");
     Console.Write("number:\t");
-    float.TryParse(Console.ReadLine(), out second_number);
+    if(!float.TryParse(Console.ReadLine(), out second_number))
+    {
+        Console.WriteLine("what are you doing that aint a number at all");
+    }
 
     Console.WriteLine("You can use either: +,-,*,/");
     Console.Write("Choice:\t");
