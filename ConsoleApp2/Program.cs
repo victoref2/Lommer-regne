@@ -1,8 +1,8 @@
 ﻿
-int first_number;
-int second_number;
+float first_number;
+float second_number;
 string what_do ="well thats allright then!";
-int answer;
+float answer;
 string calculation;
 
 string boomer = "per";
