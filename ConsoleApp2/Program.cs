@@ -1,4 +1,6 @@
 ﻿
+using System.Linq.Expressions;
+
 float first_number;
 float second_number;
 string what_do ="well thats allright then!";
@@ -6,7 +8,6 @@ float answer;
 string calculation;
 
 string boomer = "per";
-
 
 
 string boomer_do = "Work on Antwar";
@@ -19,17 +20,20 @@ while (boomer != boomer_do)
 
     Console.Write("number:\t");
 #pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
-    first_number = (float)Convert.ToDouble(Console.ReadLine());
+    float.TryParse(Console.ReadLine(), out first_number);
+
+
+    
     
 
     Console.WriteLine("what is the second number you would like to use");
     Console.Write("number:\t");
-    second_number = (float)Convert.ToDouble(Console.ReadLine());
+    float.TryParse(Console.ReadLine(), out second_number);
 
     Console.WriteLine("You can use either: +,-,*,/");
     Console.Write("Choice:\t");
     calculation = Console.ReadLine();
-
+#pragma warning restore CS8600
     if (calculation == "+")
     {
         answer = first_number + second_number;
@@ -81,5 +85,5 @@ while (boomer != boomer_do)
             "░░░░░░█░░░░░░░░█░░░░\r\n" +
             "░░░░░▐▌░░░░░░░░░█░░░\r\n");
     }
-#pragma warning restore CS8600
+
 }
